@@ -6,9 +6,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
+
+    <div class="txt">
+      <label for="txt_offset">Ingrese un numero:</label>
+      <input name="txt_offset" id="txt_offset" type="number" min="1">
+      <textarea name="txt_ingresado" id="txt_ingresado" placeholder="Escribe tu mensaje aqui"></textarea>
+      <textarea name="txt_resultado" id="txt_resultado" placeholder="Aqui verás tu nuevo mensaje " readonly></textarea>
+        </div>
+        <!-- Este div tiene a los botones -->
+      <div >
+        <div  >
+        <input name="Encode"  type="button" value="OCULTAR MENSAJE" id="buttonEncode" class="buttons">
+
+        <input name="buttonDecode" id="buttonDecode" type="button" value="DESCIFRAR MENSAJE" class="buttons"  >
+        </div>
+          <div>
+          <input name="clear" type="button" value="EMPEZAR DE NUEVO"  id="clear" class="buttons">
+          </div>
+        </div>
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
