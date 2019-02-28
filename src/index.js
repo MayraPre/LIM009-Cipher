@@ -1,16 +1,16 @@
 /* Acá va tu   código */
 btnEncode = document.getElementById("buttonEncode");
 btnEncode.addEventListener("click", () => {
-	string = document.getElementById("txt_ingresado").value.toUpperCase();
-	offset = parseInt(document.getElementById("txt_offset").value);
-	resultado = cipher.encode(offset,string);
-	document.getElementById("txt_resultado").innerHTML = resultado;
- })
+	const string1 = document.getElementById("txt_ingresado").value;
+	const offset = parseInt(document.getElementById("txt_offset").value);
+	const resultado = cipher.encode(offset,string1);
+	document.getElementById("txt_resultado").value = resultado;
+});
 
   btnDecode = document.getElementById("buttonDecode")
   btnDecode.addEventListener("click", function () {
-  	string = document.getElementById("txt_ingresado").value;
-  	offset = parseInt(document.getElementById("txt_offset").value);
-  	resultado = cipher.decode(offset, string);
-  	document.getElementById("txt_resultado").innerHTML = resultado;
+  	const string = document.getElementById("txt_ingresado").value;
+  	const offset = parseInt(document.getElementById("txt_offset").value);
+  	const resultado = cipher.decode(offset, string);
+  	document.getElementById("txt_resultado").value = resultado;
   });
