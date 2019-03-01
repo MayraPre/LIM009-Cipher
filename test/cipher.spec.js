@@ -1,25 +1,15 @@
+
+
 describe('cipher', () => {
-
-  it('debería ser un objeto', () => {
-    assert.equal(typeof cipher, 'object');
+  it('cipher debe ser un objeto', ()=>{
+    assert.equal(typeof cipher,'object')
   });
-
-  describe('cipher.encode', () => {
-
-    it('debería ser una función', () => {
-      assert.equal(typeof cipher.encode, 'function');
-    });
-
-    it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33');
-  });
-
-  describe('cipher.decode', () => {
-
-    it('debería ser una función', () => {
-      assert.equal(typeof cipher.decode, 'function');
-    });
-
-    it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33');
-  });
-
+  describe('cipher.suma',()=>{
+    it('cipher.suma deberia ser una funcion', ()=>{
+      assert.equal(typeof cipher.suma, 'function');
+    })
+    it('cipher suma debe sumar dos numeros para ello cuando a=3 y b=5, debe retornar 8',()=>{
+      assert.equal(cipher.suma(3,5) , 8)
+    })
+  })
 });
