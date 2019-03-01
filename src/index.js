@@ -1,4 +1,4 @@
-/* Acá va tu   código */
+/*Boton que encripta con las constantes*/
 btnEncode = document.getElementById("buttonEncode");
 btnEncode.addEventListener("click", () => {
 	const string1 = document.getElementById("txt_ingresado").value;
@@ -7,6 +7,7 @@ btnEncode.addEventListener("click", () => {
 	document.getElementById("txt_resultado").value = resultado;
 });
 
+/*Boton que des-encripta con las constantes*/
   btnDecode = document.getElementById("buttonDecode")
   btnDecode.addEventListener("click", function () {
   	const string = document.getElementById("txt_ingresado").value;
