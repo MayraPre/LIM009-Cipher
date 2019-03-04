@@ -32,11 +32,12 @@ window.cipher = {
             let formula = (posicion - 122 - offset) % 26 + 122;
             let result = String.fromCharCode(formula);
             resultado += result;
-          } else {
-            let result = String.fromCharCode(asciiCode);
-            resultado += result;
+          } else if (posicion == 32){
+            resultado += " ";
           }
         }
-        return (resultado);
+        return resultado
       }
     }
+      
+    
