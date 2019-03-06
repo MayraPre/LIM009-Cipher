@@ -1,4 +1,6 @@
 /* Acá va tu   código */
+
+/* Funcion  y fórmula para encriptar*/
 const btnEncode = document.getElementById("buttonEncode");
 btnEncode.addEventListener("click", () => {
 	const string1 = document.getElementById("txt_ingresado").value;
@@ -7,6 +9,7 @@ btnEncode.addEventListener("click", () => {
 	document.getElementById("txt_resultado").value = resultado;
 });
 
+/* Funcion  y fórmula para desencriptar*/
 const btnDecode = document.getElementById("buttonDecode")
 btnDecode.addEventListener("click", function () {
 	const string = document.getElementById("txt_ingresado").value;
@@ -14,3 +17,4 @@ btnDecode.addEventListener("click", function () {
 	const resultado = cipher.decode(offset, string);
 	document.getElementById("txt_resultado").value = resultado;
 });
+

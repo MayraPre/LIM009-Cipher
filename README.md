@@ -8,7 +8,7 @@ Aplicación desarrollada para Chef's y Bartender´s creadores de recetas y breba
 **FORMULA SECRETA** esta diseñada de una manera amigable con el usuario, cuenta con un tamaño y tipo de letra legible y adaptable a cada pantalla, su diseño funcional tiene dos pantallas una en la cual se ingea el ingrediente y la ventana siguiente te devuelve el "Ingrediente Secreto". 
 
 
-#BENEFICIOS: 
+# BENEFICIOS: 
 ---
 * Almacenar recetas de una manera segura
 * Envar recetas por correo

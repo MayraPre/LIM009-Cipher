@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <div class="content">
     <h1> FORMULA SECRETA </h1>
 
@@ -13,21 +14,18 @@
       <label for="txt_offset">Ingrese un numero:</label>
       <input name="txt_offset" id="txt_offset" type="number" min="1">
     </div>
-    <div class="textos">
-      <textarea name="txt_ingresado" id="txt_ingresado" placeholder="Escribe tu mensaje aqui"></textarea>
-      <textarea name="txt_resultado" id="txt_resultado" placeholder="Aqui verás tu nuevo mensaje " readonly></textarea>
+
+    <!--Este div contiene los textos-->
+    <div class="textos" id="text">
+      <textarea name="txt_ingresado" id="txt_ingresado" placeholder="Ingrediente"></textarea>
+      <textarea name="txt_resultado" id="txt_resultado" placeholder="Ingrediente secreto" readonly></textarea>
     </div>
-        <!-- Este div tiene a los botones -->
-      <div>
-        <div class="botones1">
+
+    <!-- Este div contiene a los botones -->
+      <div class="botones1">
         <input name="Encode"  type="button" value="OCULTAR MENSAJE" id="buttonEncode" class="buttons">
         <input name="buttonDecode" id="buttonDecode" type="button" value="DESCIFRAR MENSAJE" class="buttons"  >
-        </div>
-
-        <div class="botones2">
-        <input name="clear" type="button" value="EMPEZAR DE NUEVO"  id="clear" class="buttons">
-        </div>
-        </div>
+      </div>
       </div>
 
     <script src="cipher.js"></script>
